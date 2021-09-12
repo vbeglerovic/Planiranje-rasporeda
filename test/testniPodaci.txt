@@ -1,0 +1,22 @@
+DELETE,/v1/all,null,{\"message\":\"Uspješno obrisan sadržaj datoteka!\"}
+GET,/v1/predmeti,null,[]
+POST,/v1/predmet,{\"naziv\":\"RMA\"},{\"message\":\"Uspješno dodan predmet!\"}
+POST,/v1/predmet,{\"naziv\":\"WT\"},{\"message\":\"Uspješno dodan predmet!\"}
+POST,/v1/predmet,{\"naziv\":\"RMA\"},{\"message\":\"Naziv predmeta postoji!\"}
+GET,/v1/predmeti,null,[{\"naziv\":\"RMA\"},{\"naziv\":\"WT\"}]
+DELETE,/v1/predmet/OOI,null,{\"message\":\"Greška - predmet nije obrisan!\"}
+DELETE,/v1/predmet/RMA,null,{\"message\":\"Uspješno obrisan predmet!\"}
+GET,/v1/predmeti,null,[{\"naziv\":\"WT\"}]
+GET,/v1/aktivnosti,null,[]
+POST,/v1/aktivnost,{\"naziv\":\"RG\",\"tip\":\"predavanje\",\"pocetak\":9,\"kraj\":11,\"dan\":\"ponedjeljak\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+POST,/v1/aktivnost,{\"naziv\":\"WT\",\"tip\":\"predavanje\",\"pocetak\":9,\"kraj\":11,\"dan\":\"utorak\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+POST,/v1/aktivnost,{\"naziv\":\"RG\",\"tip\":\"vjezbe\",\"pocetak\":9,\"kraj\":10,\"dan\":\"ponedjeljak\"},{\"message\":\"Aktivnost nije validna!\"}
+POST,/v1/aktivnost,{\"naziv\":\"DM\",\"tip\":\"vjezbe\",\"pocetak\":19,\"kraj\":17,\"dan\":\"ponedjeljak\"},{\"message\":\"Aktivnost nije validna!\"}
+POST,/v1/aktivnost,{\"naziv\":\"DM\",\"tip\":\"vjezbe\",\"pocetak\":9,\"kraj\":10.7,\"dan\":\"srijeda\"},{\"message\":\"Aktivnost nije validna!\"}
+POST,/v1/aktivnost,{\"naziv\":\"RG\",\"tip\":\"vjezbe\",\"pocetak\":11.5,\"kraj\":13.5,\"dan\":\"ponedjeljak\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+GET,/v1/predmet/RG/aktivnost/,null,[{\"naziv\":\"RG\",\"tip\":"predavanje\",\"pocetak\":9,\"kraj\":11,\"dan\":\"ponedjeljak\"},{\"naziv\":\"RG\",\"tip\":\"vjezbe\",\"pocetak\":11.5,\"kraj\":13.5,\"dan\":\"ponedjeljak\"}]
+DELETE,/v1/aktivnost/RG,null,{\"message\":\"Uspješno obrisana aktivnost!\"}
+DELETE,/v1/aktivnost/OOI,null,{\"message\":\"Greška - aktivnost nije obrisana!\"}
+GET,/v1/predmet/RG/aktivnost/,null,[]
+GET,/v1/aktivnosti,null,[{\"naziv\":\"WT\",\"tip\":\"predavanje\",\"pocetak\":9,\"kraj\":11,\"dan\":\"utorak\"}]
+DELETE,/v1/all,null,{\"message\":\"Uspješno obrisan sadržaj datoteka!\"}

@@ -1,0 +1,80 @@
+body {
+    background-color:#e6f3ff;
+}
+label, input {
+    display: block;
+}
+label {
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-bottom: 5%;
+    font-size: 20px;
+    width: 40%;
+}
+form {
+    margin: 0 auto;
+    width:25%;
+    padding-top: 5%;
+    margin-top: 3%;
+    display: block;
+}
+input {
+    width: 50%;
+    font-size: 18px;
+    float: right;
+}
+select {
+    width: 50%;
+    font-size: 18px;
+    float: right;
+}
+input[type=submit] {
+    margin-top: 5%;
+    background-color:#29293d;
+    color: white;
+    padding: 2%;
+}
+ul {
+    list-style-type: none;
+    background-color:  #29293d;
+    margin: 0 auto;
+    overflow: hidden;
+}
+li {
+    float: left;
+    display: inline;
+    width: 12.5%;
+}  
+li a {
+    display: block;
+    text-align: center;
+    padding:3%;
+    text-decoration: none;
+    color: white;
+}  
+li a:hover {
+    background-color: #1f1f2e;
+}
+
+@media screen and (max-width:600px) {
+  form {
+      width: 65%;
+  }
+  select, input {
+      width:100%;
+      margin-bottom: 10%;
+      margin-top: 5%;
+  }
+  label {
+      text-align: left;
+      clear: both;
+      margin-bottom: 0;
+      font-size: 20px;
+      display: block;
+      width: 100%;
+  }
+  li {
+      width: 40%;
+  }
+}

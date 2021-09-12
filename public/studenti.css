@@ -1,0 +1,91 @@
+body {
+    background-color:#e6f3ff;
+}
+label, textarea {
+    display: inline-block;
+}
+label {
+    text-align: left;
+    clear: both;
+    float:left;
+    margin-bottom: 5%;
+    font-size: 20px;
+    width: 20%;
+    margin-top: 5%;
+}
+form {
+    margin: 0 auto;
+    width:25%;
+    padding-top: 1%;
+    margin-top: 1%;
+    display: block;
+}
+textarea {
+    width: 100%;
+    font-size: 18px;
+    height: 200px;
+}
+select {
+    width: 50%;
+    font-size: 18px;
+    float: left;
+    margin-top: 5%;
+    height: 30px;
+}
+ul {
+    list-style-type: none;
+    background-color:  #29293d;
+    margin: 0 auto;
+    overflow: hidden;
+}
+li {
+    float: left;
+    display: inline;
+    width: 12.5%;
+}  
+li a {
+    display: block;
+    text-align: center;
+    padding:3%;
+    text-decoration: none;
+    color: white;
+}  
+li a:hover {
+    background-color: #1f1f2e;
+}
+div {
+    font-size: 24px;
+}
+button {
+    width: 50%;
+    height: 40px;
+    float: left;
+    margin-top: 10%;
+    background-color:#1f1f2e;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+  form {
+      width: 65%;
+  }
+  select, textarea {
+      width:100%;
+      margin-bottom: 10%;
+      margin-top: 5%;
+  }
+  button {
+      width: 50%;
+  }
+  label {
+      text-align: left;
+      clear: both;
+      margin-bottom: 0;
+      font-size: 20px;
+      display: block;
+      width: 100%;
+  }
+  li {
+      width: 40%;
+  }
+}

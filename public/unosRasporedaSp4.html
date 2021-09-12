@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bs">
+  <head>
+    <title>Spirala 3, Zadatak 3</title>
+    <link rel="stylesheet" type="text/css" href="unosRasporeda.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+<body>
+  <ul>
+    <li><a href="raspored.html">Raspored</a></li>
+    <li><a href="aktivnost.html">Aktivnost</a></li>
+    <li><a href="planiranjeNastavnik.html">Planiranje nastavnik</a></li>
+    <li><a href="podaciStudent.html">Podaci student</a></li>
+    <li><a href="spirala2rasporedi.html">Spirala 2</a></li>
+    <li><a href="unosRasporeda.html">Unos rasporeda</a></li>
+    <li><a href="studenti.html">Studenti</a></li>
+    <li><a href="unosRasporedaSp4.html">Raspored Sp4</a></li>
+</ul>
+<div id="div1"></div>
+  <form id="forma">
+      <label for="grupePredmeti">Predmet-grupa:</label>
+      <select id="grupePredmeti" name="grupePredmeti"></select>
+      <label for="predmetGrupa">Novi predmet-grupa:</label>
+      <input type="text" id="predmetGrupa">
+      <label for="tipovi">Tip:</label>
+      <select id="tipovi" name="tipovi"></select>
+      <label for="pocetak">Vrijeme po&ccaron;etka:</label>
+      <input type="time" id="pocetak">
+      <label for="kraj">Vrijeme kraja:</label>
+      <input type="time" id="kraj">
+      <label for="dani">Dan u sedmici:</label>
+      <select id="dani" name="dani"></select>
+      <button type="button" id="potvrdi" onclick="dodajPredmetGrupu()">Potvrdi</button>
+  </form>
+  <script src="zadatak3sp4.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "wt20p18460",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "iscrtaj.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://vbeglerovic@bitbucket.org/vbeglerovic/wt20p18460.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/vbeglerovic/wt20p18460#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1",
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.31.2"
+  }
+}

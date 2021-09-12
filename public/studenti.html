@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Studenti</title>
+    <link rel="stylesheet" type="text/css" href="studenti.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+<body>
+  <ul>
+    <li><a href="raspored.html">Raspored</a></li>
+    <li><a href="aktivnost.html">Aktivnost</a></li>
+    <li><a href="planiranjeNastavnik.html">Planiranje nastavnik</a></li>
+    <li><a href="podaciStudent.html">Podaci student</a></li>
+    <li><a href="spirala2rasporedi.html">Spirala 2</a></li>
+    <li><a href="unosRasporeda.html">Unos rasporeda</a></li>
+    <li><a href="studenti.html">Studenti</a></li>
+    <li><a href="unosRasporedaSp4.html">Raspored Sp4</a></li>
+</ul>
+  <form id="form">
+      <label for="student">Studenti:</label>
+      <textarea id="studenti" name="studenti"></textarea>
+      <label for="grupa">Grupa:</label>
+      <select id="grupe" name="grupe"></select>
+      <button type="button" id="posalji" onclick="posaljiStudente()">Posalji</button>
+  </form>
+  <div id='pomoc'>
+  </div>
+  <script src="studenti.js"></script> 
+</body>
+</html>

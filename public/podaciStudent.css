@@ -1,0 +1,53 @@
+body {
+  background-color:#e6f3ff;
+}
+table, td {
+    border: black solid 1px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 5%;
+    text-align: center;
+    background-color: white;
+}
+td {
+    height: 30px;
+}
+tr:first-child {
+  font-size:20px;
+  background-color:  #333399;
+}
+tr:hover{
+    border: black solid 2px;
+}
+ul {
+  list-style-type: none;
+  background-color:  #29293d;
+  margin: 0 auto;
+  overflow: hidden;
+}
+li {
+    float: left;
+    display: inline;
+    width: 12.5%;
+}  
+li a {
+  display: block;
+  text-align: center;
+  padding:3%;
+  text-decoration: none;
+  color: white;
+}  
+li a:hover {
+  background-color: #1f1f2e;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 90%;
+    margin-top: 20%;
+  }
+  li {
+      width: 40%;
+  }
+}

@@ -1,0 +1,84 @@
+body {
+  background-color:#e6f3ff;
+  text-align: center;
+}
+fieldset {
+  display: inline;
+  border-color:	#3366cc;
+  color: #3366cc;
+  text-align: center;
+  padding-top: 3%;
+}
+legend { 
+  font-size: 16px;
+  text-align: center;
+  margin:0 auto;
+}
+form {
+  margin: 0 auto;
+  display: inline-block;
+  padding-top: 5%;
+  width: 50%;
+}
+#trenutni {
+  border-radius: 5%;
+  height: 250px;
+  width: 25%;
+}
+.sporedni {
+  border-radius: 15%;
+  height: 200px;
+  width: 20%;
+}
+p.naslov {
+  font-size: 20px;
+}
+p {
+  font-size: 12px;
+}
+ul {
+  list-style-type: none;
+  background-color:  #29293d;
+  margin: 0 auto;
+  overflow: hidden;
+}
+li {
+    float: left;
+    display: inline;
+    width: 12.5%;
+}  
+li a {
+  display: block;
+  text-align: center;
+  padding:3%;
+  text-decoration: none;
+  color: white;
+}  
+li a:hover {
+  background-color: #1f1f2e;
+}
+
+@media screen and (max-width: 600px) {
+  fieldset:first-of-type {
+    display: none;
+  }
+  fieldset {
+    display: inline-block;
+    margin-bottom: 5%;
+  }
+  form {
+    margin-top: 5%;
+    width: 70%;
+  }
+  #trenutni {
+    clear: both;
+    width:85%;
+  }
+  .sporedni {
+    width:75%;
+    clear: both;
+  }
+  li {
+    width: 40%;
+  }
+}
